@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+/******** 全体 *******/
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+
+/******** ヘッダー *******/
+header {
+  background-color: #252B2D;
+  width: 100%;
+  height: 120px;
+}
+
+#header_inner {
+  max-width:784px;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  align-items:center;
+}
+
+#header_menu {
+  width: 637px;
+  height: 46px;
+  margin-top: 10px;
+}
+
+#header_inner  {
+  display: flex;
+  margin: 0 auto;
+  align-items:center;
+}
+
+#header_inner nav ul{
+  display: flex;
+  margin: 0 auto;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+#header_inner nav ul li {
+  margin-left: 19px;
+  line-height: 23px;
+}
+
+#header_inner img#logo {
+  width: 137px;
+  height: 80px;
+}
+
+#header_inner nav ul li a {
+  width: 63px;
+  height: 24px;
+  color: white;
+  font-size: 19.2px;
+  font-family: 'Staatliches',cursive;
+  transition: all 0.3s;
+}
+
+#header_inner nav ul li.menu a:hover {
+  letter-spacing: 5px;
+  color: #FFE799;
+  transition: all 0.3s;
+  transform-origin: center center;
+}
+
+#header_inner nav ul li#icon_discord {
+  background: url(images/icon_discord.png) no-repeat center center;
+  background-size: cover;
+  width: 28px;
+  height: 20px;
+}
+
+#header_inner nav ul li#icon_twitter {
+  background: url(images/icon_twitter.png) no-repeat center center;
+  background-size: cover;
+  width: 24px;
+  height: 20px;
+}
+
+#header_inner nav ul li#icon_instagram {
+  background: url(images/icon_instagram.png) no-repeat center center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+#header_inner nav ul li#icon_opensea {
+  background: url(images/icon_opensea.png) no-repeat center center;
+  background-size: cover;
+  width: 22px;
+  height: 20px;
+}
+
+#header_inner nav ul li.menu_icon:hover {
+  filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
+  transition:  0.3s;
+}
+
+#header_inner nav ul li a#dashboard {
+  width: 117px;
+  height: 20px;
+  padding: 10px 20px;
+  background-color: #4F94CF;
+  color: white;
+  font-size: 19.2px;
+  font-family: 'Staatliches',cursive;
+  text-align: center;
+  border: 3px solid #A5D6FF;
+  border-radius: 10px;
+}
+
+#header_inner nav ul li a#dashboard:hover {
+  background-color: black;
+  color: #FFFFA2;
+  transform: rotate(10deg);
+  transition: all 0.3s;
+  border: 3px solid #4F94CF;
+  border-radius: 10px;
+
+}
+
+
+
+/******** yt *******/
+#yt {
+  width: 100%;
+}
+
+#yt img {
+  width: 100%;
+}
+
+
+
+/******** intro *******/
+#intro {
+  margin-top: -4px;
+  width: 100%;
+  height: auto;
+  background-color: #8150B2;
+}
+
+#intro_left {
+  float: left;
+  width: 365px;
+  height: 320pxs;
+  padding:35px 35px 0 35px;
+  margin-bottom: 35px;
+}
+
+#intro #intro_left h1 {
+  font-family: 'Staatliches',cursive;
+  font-size: 48px;
+  color: white;
+}
+
+
+#intro #intro_left p {
+  font-family: 'patrick hand',cursive;
+  font-size: 24px;
+  color: #FECE62;
+}
+
+#intro_right {
+  padding: 47px 25px 38px 0;
+}
+
+#intro_right #intro_image {
+  width: 349px;
+  height: 349px;
+  float: right;
+  background: url(images/bear1.png) no-repeat;
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 20px;
+}
+
+
+#icons {
+  width: 100%;
+  height: 120px;
+  background-color: #553377;
+}
+
+#icons_inner {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons_box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#icons_inner p {
+  font-family: 'patrick hand',cursive;
+  font-size: 22px;
+  color: white;
+  display: block;
+  padding-top: 40px;
+}
+
+
+#icons_inner #icons_discord {
+  background: url(images/icon_discord.png) no-repeat center center;
+  background-size: cover;
+  width: 55px;
+  height: 40px;
+}
+
+#icons_inner #icons_twitter {
+  background: url(images/icon_twitter.png) no-repeat center center;
+  background-size: cover;
+  width: 49px;
+  height: 40px;
+}
+
+#icons_inner #icons_instagram {
+  background: url(images/icon_instagram.png) no-repeat center center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+#icons_inner #icons_opensea {
+  background: url(images/icon_opensea.png) no-repeat center center;
+  background-size: cover;
+  width: 44px;
+  height: 40px;
+}
