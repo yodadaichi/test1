@@ -170,31 +170,20 @@ header {
   border-radius: 20px;
 }
 
-/*
-#intro {
-  background-color: #8150B2;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 35px 0;
-  align-items: center;
-}
-*/
 
-
-#intro #text {
+#intro #intro_text {
   margin: 0 auto;
   padding: 0 10px;
 }
 
-#intro #text h2 {
+#intro #intro_text h2 {
   font-family: 'Staatliches',cursive;
   font-size: 48px;
   color: white;
   width: auto;
 }
 
-#intro #text p {
+#intro #intro_text p {
   font-family: 'patrick hand',cursive;
   font-size: 24px;
   color: #FECE62;
@@ -221,49 +210,6 @@ header {
   font-size: 22px;
   color: white;
 }
-
-
-/*
-#image {
-  width: 45%;
-  margin-right: 25px;
-}
-
-#image img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-}
-
-*/
-/*
-
-#icons {
-  width: 100%;
-  height: 120px;
-  background-color: #553377;
-}
-
-#icons_inner {
-  padding: 25px;
-  line-height: 70px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#icons #icons_inner .icons_container {
-  width: 80px;
-  background-color: red;
-}
-
-#icons #icons_inner .icons_item {
-  width: 57px;
-  height: 70px;
-  margin: 0 12px;
-  background-color: pink;
-}
-*/
 #icons_discord {
   width: 55px;
   height: 40px;
@@ -377,3 +323,141 @@ border-radius: 10px;
 box-shadow: 5px 5px 0 #153A47;
 }
 
+
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 35px;
+  background-color: #D39090  ;
+
+  place-items: center;
+}
+
+#about_image {
+  text-align: center;
+}
+
+#about img {
+  max-width: 245px;
+  border-radius: 20px;
+}
+
+
+#about #about_text {
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+}
+
+#about #about_text h2 {
+  font-family: 'Staatliches',cursive;
+  font-size: 48px;
+  color: #FEFFC8;
+  width: auto;
+}
+
+#about #about_text p {
+  font-family: 'patrick hand',cursive;
+  font-size: 24px;
+  color: #441633;
+}
+
+
+#team {
+  background-color: #5394A4;
+}
+
+
+#team #team_inner h2 {
+  display: inline-block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  font-size: 72px;
+  color: white;
+  font-family: 'staatliches',cursive;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+#team #team_inner {
+  text-align: center;
+}
+
+#team_container {
+  display: grid;
+  grid-template-rows: 430px 430px;
+  /* grid-template-columns:245px 245px; */
+}
+
+.team_image {
+display: inline-block;
+width: 430px;
+height: 430px;
+background-color: red;
+margin: 10px 10px;
+border-radius: 20px;
+box-shadow: 5px 5px 0 #153A47;
+border: 3px solid white;
+}
+
+
+#faq {
+  background-color: #29697A;
+}
+
+#faq #faq_inner {
+  padding: 25px;
+}
+
+
+
+
+#faq #faq_inner h2 {
+  display: inline-block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  font-size: 72px;
+  color: white;
+  font-family: 'staatliches',cursive;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+#faq #faq_inner h3 {
+  font-family: 'Staatliches',cursive;
+  font-size: 48px;
+  color: #FECE62;
+  width: auto;
+  margin-top: 15px;
+}
+
+#faq #faq_inner p {
+  font-family: 'patrick hand',cursive;
+  font-size: 24px;
+  color: #EEEBDE;
+}
+
+#footer_inner {
+  height: 140px;
+  padding: 40px;
+  background-color: #252B2D;
+  text-align: center;
+  color: white;
+
+}
+
+.footer_icon {
+  display: inline-block;
+  background-color: red;
+  width: 41px;
+  height: 30px;
+  padding: 20px;
+}
+
+.footer_icon img {
+}
