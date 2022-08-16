@@ -53,6 +53,9 @@ a {
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+}
 
 
 /******** ヘッダー *******/
@@ -60,187 +63,175 @@ header {
   background-color: #252B2D;
   width: 100%;
   height: 120px;
-  position: fixed;
-  z-index: 10;
-}
-
-#header_left {
-  width: 69px;
-  height: 40px;
-  background: url(images/killa_logo.png) no-repeat ;
-  margin: 0 20px;
 }
 
 #header_inner {
-  width: 764px;
-  height: 120px;
-  margin: 0 auto;
+  max-width:784px;
+  height: 80px;
+  padding: 20px;
   display: flex;
-  align-items: center;
+  margin: 0 auto;
+  align-items:center;
+}
+
+#header_menu {
+  width: 637px;
+  height: 46px;
+  margin-top: 10px;
+}
+
+#header_inner  {
+  display: flex;
+  margin: 0 auto;
+  align-items:center;
 }
 
 #header_inner nav ul{
   display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  align-items:center;
+  justify-content: space-between;
 }
 
-#header_inner nav ul a {
+
+#header_inner nav ul li {
+  margin-left: 19px;
+  line-height: 23px;
+}
+
+#header_inner img#logo {
+  width: 137px;
+  height: 80px;
+}
+
+#header_inner nav ul li a {
+  width: 63px;
+  height: 24px;
   color: white;
-  margin-right: 15px;
-  font-size: 19px;
-  font-family: 'staatliches',cursive;
-  transition: 0.3s;
-
+  font-size: 19.2px;
+  font-family: 'Staatliches',cursive;
+  transition: all 0.3s;
 }
 
-#header_inner nav ul a:hover {
-  color: #FFE799;
+#header_inner nav ul li.menu a:hover {
   letter-spacing: 5px;
-  transition: 0.3s;
+  color: #FFE799;
+  transition: all 0.3s;
+  transform-origin: center center;
 }
 
-.menu_icon {
-  width: 40px;
-  height: 25x;
-  margin: 0 5px;
-}
-
-#icon_discord {
+#header_inner nav ul li#icon_discord {
   background: url(images/icon_discord.png) no-repeat center center;
-  background-size:contain;
+  background-size: cover;
+  width: 28px;
+  height: 20px;
 }
 
-
-#icon_twitter {
+#header_inner nav ul li#icon_twitter {
   background: url(images/icon_twitter.png) no-repeat center center;
-  background-size: contain;
+  background-size: cover;
+  width: 24px;
+  height: 20px;
 }
 
-#icon_instagram {
+#header_inner nav ul li#icon_instagram {
   background: url(images/icon_instagram.png) no-repeat center center;
-  background-size: contain;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
 }
 
-#icon_opensea {
+#header_inner nav ul li#icon_opensea {
   background: url(images/icon_opensea.png) no-repeat center center;
-  background-size: contain;
+  background-size: cover;
+  width: 22px;
+  height: 20px;
 }
 
-#dashboard {
-  color: white;
-  font-size: 20px;
-  font-family: 'staatliches',cursive;
-  padding: 8px 20px;
+#header_inner nav ul li.menu_icon:hover {
+  filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
+  transition:  0.3s;
+}
+
+#header_inner nav ul li a#dashboard {
+  width: 117px;
+  height: 20px;
+  padding: 10px 20px;
   background-color: #4F94CF;
+  color: white;
+  font-size: 19.2px;
+  font-family: 'Staatliches',cursive;
+  text-align: center;
   border: 3px solid #A5D6FF;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-#dashboard:hover {
-  color: #FECE62;
-  font-size: 20px;
-  font-family: 'staatliches',cursive;
-  padding: 8px 20px;
+#header_inner nav ul li a#dashboard:hover {
   background-color: black;
-  border: none;
+  color: #FFFFA2;
+  transform: rotate(10deg);
+  transition: all 0.3s;
+  border: 3px solid #4F94CF;
   border-radius: 10px;
-  letter-spacing: 3px;
-  transition: 0.3s;
+
 }
 
-#book {
+
+
+/******** yt *******/
+#yt {
   width: 100%;
-  height: 300px;
-  background-color: gray;
 }
 
+#yt img {
+  width: 100%;
+}
+
+
+
+/******** intro *******/
 #intro {
-  display: grid;
-  /* grid-template-rows: 500px 500px; */
-  /* grid-template-columns:1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 35px;
-  background-color: #8150B2;
-  text-align: center;
-}
-
-#intro img {
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 245px;
-
-  border-radius: 20px;
-}
-
-/*
-#intro {
-  background-color: #8150B2;
+  margin-top: -4px;
   width: 100%;
   height: auto;
-  display: flex;
-  padding: 35px 0;
-  align-items: center;
-}
-*/
-
-
-#intro #text {
-  /* width: 45%; */
-  margin: 0 auto;
-  padding: 0 10px;
+  background-color: #8150B2;
 }
 
-#intro #text h2 {
+#intro_left {
+  float: left;
+  width: 365px;
+  height: 320pxs;
+  padding:35px 35px 0 35px;
+  margin-bottom: 35px;
+}
+
+#intro #intro_left h1 {
   font-family: 'Staatliches',cursive;
   font-size: 48px;
   color: white;
 }
 
-#intro #text p {
+
+#intro #intro_left p {
   font-family: 'patrick hand',cursive;
   font-size: 24px;
   color: #FECE62;
 }
 
-#icons {
-  height: 120px;
-  display: flex;
-  justify-content: space-around;
-  padding:0 60px;
-  background-color: #553377;
-  align-items: center;
+#intro_right {
+  padding: 47px 25px 38px 0;
 }
 
-#icons .icons_item {
-  display: inline-block;
-  width: auto;
-  height: 70px;
+#intro_right #intro_image {
+  width: 349px;
+  height: 349px;
+  float: right;
+  background: url(images/bear1.png) no-repeat;
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 20px;
 }
 
-#icons .icons_item p {
-  text-align: center;
-  font-family: 'patrick hand',cursive;
-  font-size: 22px;
-  color: white;
-}
-
-
-/*
-#image {
-  width: 45%;
-  margin-right: 25px;
-}
-
-#image img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-}
-
-*/
-/*
 
 #icons {
   width: 100%;
@@ -250,133 +241,50 @@ header {
 
 #icons_inner {
   padding: 25px;
-  line-height: 70px;
   display: flex;
   justify-content: space-around;
 }
 
-#icons #icons_inner .icons_container {
+.icons_box {
   width: 80px;
-  background-color: red;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
 }
-
-#icons #icons_inner .icons_item {
-  width: 57px;
-  height: 70px;
-  margin: 0 12px;
-  background-color: pink;
-}
-*/
-#icons_discord {
-  width: 55px;
-  height: 40px;
-  background: url(images/icon_discord.png) no-repeat top center;
-  background-size : contain;
-  margin: 0 auto;
-}
-
-#icons_twitter {
-  width: 49px;
-  height: 40px;
-  background: url(images/icon_twitter.png) no-repeat top center;
-  background-size: contain;
-  margin: 0 auto;
-}
-
-#icons_instagram {
-  width: 40px;
-  height: 40px;
-  background: url(images/icon_instagram.png) no-repeat top center;
-  background-size: contain;
-  margin: 0 auto;
-}
-
-#icons_opensea {
-  width: 44px;
-  height: 40px;
-  background: url(images/icon_opensea.png) no-repeat top center;
-  background-size: contain;
-  margin: 0 auto;
-}
-
 
 #icons_inner p {
-  padding-top: 25px;
-  text-align: center;
   font-family: 'patrick hand',cursive;
   font-size: 22px;
   color: white;
+  display: block;
+  padding-top: 40px;
 }
 
 
-#gallery{
-  background-color: #29697A;
+#icons_inner #icons_discord {
+  background: url(images/icon_discord.png) no-repeat center center;
+  background-size: cover;
+  width: 55px;
+  height: 40px;
 }
 
-
-#gallery #gallery_inner h2 {
-  display: inline-block;
-  width: 100%;
-  height: 72px;
-  text-align: center;
-  line-height: 72px;
-  font-size: 72px;
-  color: white;
-  font-family: 'staatliches',cursive;
-  margin-top: 45px;
-  margin-bottom: 20px;
+#icons_inner #icons_twitter {
+  background: url(images/icon_twitter.png) no-repeat center center;
+  background-size: cover;
+  width: 49px;
+  height: 40px;
 }
 
-
-
-#gallery #gallery_inner {
-  text-align: center;
+#icons_inner #icons_instagram {
+  background: url(images/icon_instagram.png) no-repeat center center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
 }
 
-#gallery #gallery_inner input{
-  width: 150px;
-  height: 35px;
-  border-radius: 8px;
+#icons_inner #icons_opensea {
+  background: url(images/icon_opensea.png) no-repeat center center;
+  background-size: cover;
+  width: 44px;
+  height: 40px;
 }
-
-#gallery #gallery_inner #btn_go {
-  display: inline-block;
-  color: white;
-  font-size: 20px;
-  font-family: 'staatliches',cursive;
-  padding: 4px 10px;
-  background-color: #4F94CF;
-  border: 3px solid #A5D6FF;
-  border-radius: 10px;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0 #275371;
-  margin-left: 5px;
-
-}
-
-
-#gallery #gallery_inner #btn_go:hover {
-  background-color: black;
-  rotate: -5deg;
-  transition: 0.3s;
-  border: 2px solid #A5D6FF;
-
-}
-
-#gallery_container {
-  display: grid;
-  grid-template-rows:  245px 245px 245px 245px;
-  grid-template-columns:245px 245px;
-  /* gap: 10px; */
-}
-
-.gleery_image {
-display: inline-block;
-width: 245px;
-height: 245px;
-background-color: red;
-margin: 10px 10px;
-border-radius: 10px;
-box-shadow: 5px 5px 0 #153A47;
-}
-
