@@ -463,7 +463,7 @@ object-fit: contain;
   height: 30px;
   background: url(images/icon_discord.png) no-repeat center center;
   background-size: contain;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 #footer_inner #footer_twitter {
@@ -471,7 +471,7 @@ object-fit: contain;
   height: 30px;
   background: url(images/icon_twitter.png) no-repeat center center;
   background-size: contain;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 #footer_inner #footer_instagram {
@@ -479,7 +479,7 @@ object-fit: contain;
   height: 30px;
   background: url(images/icon_instagram.png) no-repeat center center;
   background-size: contain;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 #footer_inner #footer_opensea {
@@ -487,7 +487,7 @@ object-fit: contain;
   height: 30px;
   background: url(images/icon_opensea.png) no-repeat center center;
   background-size: contain;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 footer #footer_inner p,a {
