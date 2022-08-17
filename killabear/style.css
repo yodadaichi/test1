@@ -54,7 +54,6 @@ a {
 }
 
 
-
 /******** ヘッダー *******/
 header {
   background-color: #252B2D;
@@ -198,7 +197,7 @@ header {
   align-items: center;
 }
 
-#icons .icons_item {
+.icons_item {
   display: inline-block;
   width: auto;
   height: 70px;
@@ -330,7 +329,6 @@ box-shadow: 5px 5px 0 #153A47;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 35px;
   background-color: #D39090  ;
-
   place-items: center;
 }
 
@@ -388,19 +386,20 @@ box-shadow: 5px 5px 0 #153A47;
 
 #team_container {
   display: grid;
-  grid-template-rows: 430px 430px;
-  /* grid-template-columns:245px 245px; */
+  grid-template-rows:  245px 245px 245px 245px;
+  grid-template-columns:245px 245px;
 }
 
 .team_image {
 display: inline-block;
-width: 430px;
-height: 430px;
+width: 245px;
+height: 245px;
 background-color: red;
 margin: 10px 10px;
 border-radius: 20px;
 box-shadow: 5px 5px 0 #153A47;
 border: 3px solid white;
+object-fit: contain;
 }
 
 
@@ -448,16 +447,51 @@ border: 3px solid white;
   background-color: #252B2D;
   text-align: center;
   color: white;
-
 }
 
-.footer_icon {
+
+
+#footer_icon {
   display: inline-block;
-  background-color: red;
   width: 41px;
   height: 30px;
   padding: 20px;
 }
 
-.footer_icon img {
+#footer_inner #footer_discord {
+  width: 41px;
+  height: 30px;
+  background: url(images/icon_discord.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 20px;
+}
+
+#footer_inner #footer_twitter {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_twitter.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 20px;
+}
+
+#footer_inner #footer_instagram {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_instagram.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 20px;
+}
+
+#footer_inner #footer_opensea {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_opensea.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 20px;
+}
+
+footer #footer_inner p,a {
+  font-family: 'patrick hand',cursive;
+  font-size: 19px;
+  color: white;
 }
