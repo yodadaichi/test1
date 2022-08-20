@@ -468,7 +468,7 @@ footer #footer_inner a {
   }
 
   #header_inner nav {
-    display: none;
+    /* display: none; */
   }
 
   #header_inner img {
