@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 html{overflow-y: scroll;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
-input, textarea,{margin: 0; padding: 0;}
+input, textarea{margin: 0; padding: 0;}
 ol, ul{list-style:none;}
 table{border-collapse: collapse; border-spacing:0;}
 caption, th{text-align: left;}
@@ -46,6 +46,10 @@ a:focus {outline:none;}
 .cf:after {clear: both;}
 .cf {*zoom: 1;}
 
+html {
+  scroll-behavior: smooth;
+  background-color: dimgrey;
+}
 
 
 /******** 全体 *******/
@@ -53,140 +57,126 @@ a {
   text-decoration: none;
 }
 
+.subject {
+  /* font-family: 'Staatliches',cursive; */
+  font-size: 36px;
+  color: #FEFFC8;
+}
+
+.text {
+    /* font-family: 'patrick hand',cursive; */
+    font-size: 24px;
+    color: #441633;
+}
+
+.menu {
+  color: white;
+  font-size: 32px;
+  /* font-family: 'staatliches',cursive; */
+}
+
 
 /******** ヘッダー *******/
 header {
   background-color: #252B2D;
-  width: 100%;
   height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  z-index: 10;
-}
-
-#header_left {
-  width: 69px;
-  height: 40px;
-  background: url(images/killa_logo.png) no-repeat ;
-  margin: 0 20px;
+  z-index: 1;
 }
 
 #header_inner {
-  width: 764px;
-  height: 120px;
-  margin: 0 auto;
+  width: 80%;
+  height: 80px;
+  vertical-align:bottom;
   display: flex;
-  align-items: center;
 }
 
-#header_inner nav ul{
+#header_inner nav {
+  width: 100%;
+  height: 100%;
+}
+
+#header_inner nav ul  {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
+  height: 100%;
+  width: 100%;
+  line-height: 120px;
+  margin: 0 40px;
 }
 
-#header_inner nav ul a {
-  color: white;
-  margin-right: 15px;
-  font-size: 19px;
-  font-family: 'staatliches',cursive;
-  transition: 0.3s;
-
+#header_inner nav ul li {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
 }
-
-#header_inner nav ul a:hover {
-  color: #FFE799;
-  letter-spacing: 5px;
-  transition: 0.3s;
-}
-
-.menu_icon {
-  width: 40px;
-  height: 25x;
-  margin: 0 5px;
-}
-
-#icon_discord {
-  background: url(images/icon_discord.png) no-repeat center center;
-  background-size:contain;
+#header_inner nav ul li a {
+  height: 60%;
 }
 
 
-#icon_twitter {
-  background: url(images/icon_twitter.png) no-repeat center center;
-  background-size: contain;
-}
-
-#icon_instagram {
-  background: url(images/icon_instagram.png) no-repeat center center;
-  background-size: contain;
-}
-
-#icon_opensea {
-  background: url(images/icon_opensea.png) no-repeat center center;
-  background-size: contain;
-}
-
-#dashboard {
-  color: white;
-  font-size: 20px;
-  font-family: 'staatliches',cursive;
-  padding: 8px 20px;
-  background-color: #4F94CF;
-  border: 3px solid #A5D6FF;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-#dashboard:hover {
-  color: #FECE62;
-  font-size: 20px;
-  font-family: 'staatliches',cursive;
-  padding: 8px 20px;
-  background-color: black;
-  border: none;
-  border-radius: 10px;
-  letter-spacing: 3px;
-  transition: 0.3s;
-}
-
-#book {
+#header_inner nav ul li img {
   width: auto;
-  height: 300px;
-  background-color: gray;
+  height: 80%;
+  vertical-align: middle;
+
 }
 
-#intro {
+#space {
+  height: 120px;
+}
+
+#slide {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+
+.slick-slide img {
+  height: 30vw;
+  max-height: 400px;
+  min-height: 350px;
+  margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+.slick-dots li button:before {
+  font-size: 18px;
+  top: 6px;
+  color: white;
+}
+
+
+/******* about *******/
+#about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 35px;
-  background-color: #8150B2;
-  text-align: center;
+  background-color: #D39090  ;
+  place-items: center;
 }
 
-#intro img {
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 245px;
+#about img {
+  max-width: 250px;
   border-radius: 20px;
 }
 
-
-#intro #intro_text {
+#about #about_text {
   margin: 0 auto;
   padding: 0 10px;
+  text-align: left;
 }
 
-#intro #intro_text h2 {
-  font-family: 'Staatliches',cursive;
-  font-size: 48px;
-  color: white;
-  width: auto;
-}
-
-#intro #intro_text p {
-  font-family: 'patrick hand',cursive;
-  font-size: 24px;
-  color: #FECE62;
-}
 
 #icons {
   height: 120px;
@@ -205,7 +195,6 @@ header {
 
 #icons .icons_item p {
   text-align: center;
-  font-family: 'patrick hand',cursive;
   font-size: 22px;
   color: white;
 }
@@ -245,7 +234,6 @@ header {
 #icons_inner p {
   padding-top: 25px;
   text-align: center;
-  font-family: 'patrick hand',cursive;
   font-size: 22px;
   color: white;
 }
@@ -253,6 +241,7 @@ header {
 
 #gallery{
   background-color: #29697A;
+  padding: 45px 0;
 }
 
 
@@ -262,10 +251,7 @@ header {
   height: 72px;
   text-align: center;
   line-height: 72px;
-  font-size: 72px;
   color: white;
-  font-family: 'staatliches',cursive;
-  margin-top: 45px;
   margin-bottom: 20px;
 }
 
@@ -285,7 +271,6 @@ header {
   display: inline-block;
   color: white;
   font-size: 20px;
-  font-family: 'staatliches',cursive;
   padding: 4px 10px;
   background-color: #4F94CF;
   border: 3px solid #A5D6FF;
@@ -305,18 +290,28 @@ header {
 
 }
 
-#gallery_container {
+.galeery_box {
   display: grid;
-  grid-template-rows:  245px 245px 245px 245px;
-  grid-template-columns:245px 245px;
+  /* grid-template-rows:  1fr 1fr; */
+  /* grid-template-columns:245px 245px; */
   /* gap: 10px; */
+}
+
+
+.galeery_box ul li img {
+  width: 245px;
+  height: 245px;
+  border-radius: 10px;
+}
+
+.galeery_box ul li p {
+  color :white;
 }
 
 .gleery_image {
 display: inline-block;
 width: 245px;
 height: 245px;
-background-color: red;
 margin: 10px 10px;
 border-radius: 10px;
 box-shadow: 5px 5px 0 #153A47;
@@ -324,46 +319,10 @@ box-shadow: 5px 5px 0 #153A47;
 
 
 
-#about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 35px;
-  background-color: #D39090  ;
-  place-items: center;
-}
-
-#about_image {
-  text-align: center;
-}
-
-#about img {
-  max-width: 245px;
-  border-radius: 20px;
-}
-
-
-#about #about_text {
-  margin: 0 auto;
-  padding: 0 10px;
-  text-align: left;
-}
-
-#about #about_text h2 {
-  font-family: 'Staatliches',cursive;
-  font-size: 48px;
-  color: #FEFFC8;
-  width: auto;
-}
-
-#about #about_text p {
-  font-family: 'patrick hand',cursive;
-  font-size: 24px;
-  color: #441633;
-}
-
 
 #team {
   background-color: #5394A4;
+  padding: 45px 0;
 }
 
 
@@ -373,10 +332,7 @@ box-shadow: 5px 5px 0 #153A47;
   height: 72px;
   text-align: center;
   line-height: 72px;
-  font-size: 72px;
   color: white;
-  font-family: 'staatliches',cursive;
-  margin-top: 45px;
   margin-bottom: 20px;
 }
 
@@ -419,25 +375,19 @@ object-fit: contain;
   width: 100%;
   height: 72px;
   text-align: center;
-  line-height: 72px;
-  font-size: 72px;
+  line-height: 36px;
   color: white;
-  font-family: 'staatliches',cursive;
   margin-top: 45px;
   margin-bottom: 20px;
 }
 
 #faq #faq_inner h3 {
-  font-family: 'Staatliches',cursive;
-  font-size: 48px;
   color: #FECE62;
   width: auto;
   margin-top: 15px;
 }
 
 #faq #faq_inner p {
-  font-family: 'patrick hand',cursive;
-  font-size: 24px;
   color: #EEEBDE;
 }
 
@@ -449,8 +399,6 @@ object-fit: contain;
   color: white;
 }
 
-
-
 #footer_icon {
   display: inline-block;
   width: 41px;
@@ -458,13 +406,6 @@ object-fit: contain;
   padding: 20px;
 }
 
-#footer_inner #footer_discord {
-  width: 41px;
-  height: 30px;
-  background: url(images/icon_discord.png) no-repeat center center;
-  background-size: contain;
-  padding: 0 15px;
-}
 
 #footer_inner #footer_twitter {
   width: 37px;
@@ -491,7 +432,64 @@ object-fit: contain;
 }
 
 footer #footer_inner p,a {
-  font-family: 'patrick hand',cursive;
   font-size: 19px;
   color: white;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+footer #footer_inner a {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+
+
+/*----------------------------------------------------------*/
+/* タブレット用のCSS */
+/*----------------------------------------------------------*/
+@media only screen and (min-width:600px) and (max-width: 1024px) {
+
+
+}
+
+
+/*----------------------------------------------------------*/
+/* スマホ用のCSS */
+/*----------------------------------------------------------*/
+@media not all and (min-width: 600px) {
+
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
+  #header_inner nav {
+    display: none;
+  }
+
+  #header_inner img {
+    margin: 0 auto;
+    width: auto;
+    height: 90%;
+  }
+
+  .subject {
+    font-size: 32px;
+    color: #FEFFC8;
+  }
+
+  .text {
+      font-size: 24px;
+      color: #441633;
+  }
+
+  .menu {
+    color: white;
+    font-size: 20px;
+
+  }
 }
