@@ -139,18 +139,25 @@ header {
 }
 
 #slide {
-  max-width: 800px;
+  height: auto;
+  width: auto;
   margin: 0 auto;
   padding: 30px;
 }
 
-
-.slick-slide img {
-  height: 30vw;
-  max-height: 400px;
-  min-height: 350px;
-  margin: 0 auto;
+.slide-items {
+  margin:  0 auto;
 }
+
+
+#slide .slide-items img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
 
 .slick-prev:before,
 .slick-next:before {
