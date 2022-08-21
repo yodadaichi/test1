@@ -57,11 +57,7 @@ a {
   text-decoration: none;
 }
 
-.anchor {
-  display: block;
-  padding-top: 120px;
-  margin-top: -120px;
-}
+
 
 .subject {
   font-family: "Futura", Helvetica, sans-serif;
@@ -153,6 +149,7 @@ header {
 
 .slide-items {
   margin:  0 auto;
+  max-width: 800px;
 }
 
 
