@@ -313,6 +313,10 @@ width: 40%;
   border-radius: 8px;
 }
 
+#gallery form {
+  text-align: center;
+}
+
 #gallery #gallery_inner #btn_go {
   display: inline-block;
   color: white;
