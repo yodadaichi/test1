@@ -77,6 +77,25 @@ a {
   font-family: "Futura", Helvetica, sans-serif;
 }
 
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
+
+.timing02 {transition-delay: .2s;}
+.timing03 {transition-delay: .4s;}
+.timing04 {transition-delay: .6s;}
+.timing05 {transition-delay: .8s;}
+.timing06 {transition-delay: 1s;}
+
 
 /******** ヘッダー *******/
 
@@ -195,7 +214,7 @@ width: 40%;
 }
 
 #about img {
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 20px;
 }
 
@@ -203,6 +222,7 @@ width: 40%;
   margin: 0 auto;
   padding: 0 10px;
   text-align: left;
+  max-width: 400px;
 }
 
 
@@ -269,18 +289,18 @@ width: 40%;
 
 #gallery{
   background-color: #29697A;
-  padding: 45px 0;
+  padding: 25px 0;
 }
 
 
 #gallery #gallery_inner h2 {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 72px;
   text-align: center;
   line-height: 72px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -288,6 +308,11 @@ width: 40%;
 #gallery #gallery_inner {
   text-align: center;
 }
+
+#gallery #gallery_inner ul {
+  margin: 20px 0;
+}
+
 
 #gallery #gallery_inner input{
   width: 150px;
@@ -306,7 +331,9 @@ width: 40%;
   transition: 0.3s;
   box-shadow: 5px 5px 0 #275371;
   margin-left: 5px;
-
+  width: 60px;
+  height: 40px;
+  text-align: center;
 }
 
 
@@ -345,12 +372,16 @@ border-radius: 10px;
 box-shadow: 5px 5px 0 #153A47;
 }
 
+#gallery #gallery_inner .gallery_container .galeery_box ul li p {
+  margin-bottom: 20px;
+}
+
 
 
 
 #team {
   background-color: #5394A4;
-  padding: 45px 0;
+  padding: 25px 0;
 }
 
 
@@ -529,6 +560,7 @@ footer #footer_inner a {
 
   #header_inner a {
     margin: 0 auto;
+    /* width: 50%; */
   }
 
   #nav_sp {
@@ -539,6 +571,14 @@ footer #footer_inner a {
     display:flex;
     justify-content: space-around;
     padding: 0 20px;
+  }
+
+  #nav_sp ul li {
+    width: 50%;
+  }
+
+  #about img {
+    margin-bottom: 30px;
   }
 
   .subject {
