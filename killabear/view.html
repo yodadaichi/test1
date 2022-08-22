@@ -52,7 +52,10 @@
   <div id="chara_info">
     <h2 class="subject">PARITY STATS</h2>
     <div id="status">
-      aaaaa
+      <dl>
+        <dt>好きな食べ物</dt><dd id="like_food"></dd>
+        <dt>嫌いな食べ物</dt><dd id="dislike_food"></dd>
+      </dl>
     </div>
   </div>
 </div>
@@ -94,11 +97,28 @@ function getUrlParam(param){
     }
   }
 
+  const chara_info = [
+    ["", ""],
+    ["カレー", "納豆"],
+    ["アイス", "トマト"],
+    ["牛丼", "オクラ"],
+    ["焼き肉", "牛乳"],
+    ["寿司", "アスパラ"],
+    ["スタバ", "しいたけ"],
+    ["刺し身", "ホルモン"],
+  ];
+
   var id = getUrlParam('id');
 
   $(document).ready( function(){
-    const div = document.getElementById("chara_image");
-    div.innerHTML = '<img src="images/bear'+id+'.png" alt=""><br><p class="text"> # '+id+'</p>';
+    const chara_image  = document.getElementById("chara_image");
+    chara_image.innerHTML = '<img src="images/bear'+id+'.png" alt=""><br><p class="text"> # '+id+'</p>';
+
+    const like_food = document.getElementById("like_food");
+    like_food.innerHTML = '<p>' + chara_info[id][0] + '</p>';
+
+    const dislike_food = document.getElementById("dislike_food");
+    dislike_food.innerHTML = '<p>' + chara_info[id][1] + '</p>';
   });
 
   $(window).scroll(function () {
@@ -114,6 +134,8 @@ function getUrlParam(param){
     window.addEventListener('load', scrollAnimationFunc);
     window.addEventListener('scroll', scrollAnimationFunc);
   });
+
+
 </script>
 </body>
 </html>
