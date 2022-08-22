@@ -1,102 +1,596 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KILLABEARS</title>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+@charset "utf-8";
 
-  <link rel="stylesheet" href="style.css">
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
 
-</head>
-<body>
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
 
-<header>
-  <div id="header_inner">
-    <a href="index.html"><img src="images/logo.png" alt=""></a>
-    <nav class="cp">
-      <ul class="header_menu">
-        <li class="menu"><a href="index.html#about">ABOUT</a></li>
-        <li class="menu"> <a href="index.html#team">TEAM</a></li>
-        <li class="menu"><a href="index.html#faq">FAQ</a></li>
-        <!--
-        <li><a href=""><img src="images/icon_instagram.png" alt=""></a></li>
-        <li><a href=""><img src="images/icon_twitter.png" alt=""></a></li>
-        <li><a href=""><img src="images/icon_opensea.png" alt=""></a></li>
-         -->
-      </ul>
-    </nav>
-  </div>
-  <div id="nav_sp">
-    <nav id="nav_sp_container">
-      <ul class="header_menu">
-        <li class="menu"><a href="index.html#about">ABOUT</a></li>
-        <li class="menu"> <a href="index.html#team">TEAM</a></li>
-        <li class="menu"><a href="index.html#faq">FAQ</a></li>
-      </ul>
-    </nav>
-    </div>
-</header>
+html {
+  scroll-behavior: smooth;
+  background-color: dimgrey;
+}
 
 
-
-<div id="space"></div>
-
-<div id="info">
-  <div id="chara_image">
-  </div>
-  <div id="chara_info">
-
-  </div>
-</div>
-
-<footer>
-  <div id="footer_inner">
-    <div id="footer_icons">
-      <div class="icons_item">
-        <div id="footer_twitter"></div>
-      </div>
-      <div class="icons_item">
-        <div id="footer_instagram"></div>
-      </div>
-      <div class="icons_item">
-        <div id="footer_opensea"></div>
-      </div>
-    </div>
-    <p>
-      Contract Address
-    </p>
-    <a href="">aaaaaaa</a>
-  </div>
-</footer>
+/******** 全体 *******/
+a {
+  text-decoration: none;
+}
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
+.subject {
+  font-family: "Futura", Helvetica, sans-serif;
+  font-size: 36px;
+  color: #FEFFC8;
+}
 
-function getUrlParam(param){
-    var pageUrl = window.location.search.substring(1);
-    var urlVar = pageUrl.split('&');
-    for (var i = 0; i < urlVar.length; i++){
-        var paramName = urlVar[i].split('=');
-        if (paramName[0] == param) {
-            return decodeURI(paramName[1]);
-        }
-    }
+.text {
+  font-family: "Futura", Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.menu {
+  color: white;
+  font-size: 32px;
+  font-family: "Futura", Helvetica, sans-serif;
+}
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
+
+.timing02 {transition-delay: .2s;}
+.timing03 {transition-delay: .4s;}
+.timing04 {transition-delay: .6s;}
+.timing05 {transition-delay: .8s;}
+.timing06 {transition-delay: 1s;}
+
+
+/******** ヘッダー *******/
+
+header {
+  background-color: #252B2D;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+#header_inner {
+  width: 80%;
+  height: 80px;
+  vertical-align:bottom;
+  display: flex;
+}
+
+#header_inner a  {
+display: inline-block;
+width: 40%;
+}
+
+#header_inner a img {
+  margin: 0 auto;
+  width: auto;
+  height: 90%;
+}
+
+#header_inner nav {
+  width: 100%;
+  height: 100%;
+}
+
+#header_inner nav ul  {
+  display: flex;
+  justify-content:space-around;
+  height: 100%;
+  width: 100%;
+  line-height: 120px;
+  margin: 0 40px;
+}
+
+#header_inner nav ul li {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+}
+#header_inner nav ul li a {
+  height: 60%;
+  width: 100%;
+}
+
+
+#header_inner nav ul li img {
+  width: auto;
+  height: 80%;
+  vertical-align: middle;
+
+}
+
+#nav_sp {
+  display: none;
+}
+
+
+#space {
+  height: 120px;
+}
+
+#slide {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.slide-items {
+  margin:  0 auto;
+  max-width: 800px;
+}
+
+
+#slide .slide-items img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+.slick-dots li button:before {
+  font-size: 18px;
+  top: 6px;
+  color: white;
+}
+
+
+/******* about *******/
+#about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 35px;
+  background-color: #D39090  ;
+  place-items: center;
+}
+
+#about img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+#about #about_text {
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+  max-width: 400px;
+}
+
+
+#icons {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  padding:0 60px;
+  background-color: #553377;
+  align-items: center;
+}
+
+.icons_item {
+  display: inline-block;
+  width: auto;
+}
+
+#icons .icons_item p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+
+#icons_twitter {
+  width: 30px;
+  height: 30px;
+  background: url(images/icon_twitter.png) no-repeat top center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+#icons_instagram {
+  width: 30px;
+  height: 30px;
+  background: url(images/icon_instagram.png) no-repeat top center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+#icons_opensea {
+  width: 30px;
+  height: 30px;
+  background: url(images/icon_opensea.png) no-repeat top center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+
+#icons_inner p {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+
+#gallery{
+  background-color: #29697A;
+  padding: 25px 0;
+}
+
+
+#gallery #gallery_inner h2 {
+  display: block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+
+
+#gallery #gallery_inner {
+  text-align: center;
+}
+
+#gallery #gallery_inner ul {
+  margin: 20px 0;
+}
+
+
+#gallery #gallery_inner input{
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+#gallery form {
+  text-align: center;
+}
+
+#gallery #gallery_inner #btn_go {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  padding: 4px 10px;
+  background-color: #4F94CF;
+  border: 3px solid #A5D6FF;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0 #275371;
+  margin-left: 5px;
+  width: 60px;
+  height: 40px;
+  align-items: center;
+}
+
+
+#gallery #gallery_inner #btn_go:hover {
+  background-color: black;
+  rotate: -5deg;
+  transition: 0.3s;
+  border: 2px solid #A5D6FF;
+
+}
+
+.galeery_box {
+  display: grid;
+  /* grid-template-rows:  1fr 1fr; */
+  /* grid-template-columns:245px 245px; */
+  /* gap: 10px; */
+}
+
+
+.galeery_box ul li img {
+  width: 245px;
+  height: 245px;
+  border-radius: 10px;
+}
+
+.galeery_box ul li p {
+  color :white;
+}
+
+.gleery_image {
+display: inline-block;
+width: 245px;
+height: 245px;
+margin: 10px 10px;
+border-radius: 10px;
+box-shadow: 5px 5px 0 #153A47;
+}
+
+#gallery #gallery_inner .gallery_container .galeery_box ul li p {
+  margin-bottom: 20px;
+}
+
+
+
+
+#team {
+  background-color: #5394A4;
+  padding: 25px 0;
+}
+
+
+#team #team_inner h2 {
+  display: inline-block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#team #team_inner {
+  text-align: center;
+}
+
+#team_container {
+  display: grid;
+  grid-template-rows:  245px 245px 245px 245px;
+  grid-template-columns:245px 245px;
+}
+
+.team_image {
+display: inline-block;
+width: 245px;
+height: 245px;
+background-color: red;
+margin: 10px 10px;
+border-radius: 20px;
+box-shadow: 5px 5px 0 #153A47;
+border: 3px solid white;
+object-fit: contain;
+}
+
+
+#faq {
+  background-color: #29697A;
+}
+
+#faq #faq_inner {
+  padding: 25px;
+}
+
+
+
+
+#faq #faq_inner h2 {
+  display: inline-block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+#faq #faq_inner h3 {
+  color: #FECE62;
+  width: auto;
+  margin-top: 15px;
+}
+
+#faq #faq_inner p {
+  color: #EEEBDE;
+}
+
+#footer_inner {
+  height: 100px;
+  padding: 40px;
+  background-color: #252B2D;
+  text-align: center;
+  color: white;
+}
+
+#footer_icon {
+  display: inline-block;
+  width: 41px;
+  height: 30px;
+  padding: 20px;
+}
+
+
+#footer_inner #footer_twitter {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_twitter.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 15px;
+}
+
+#footer_inner #footer_instagram {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_instagram.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 15px;
+}
+
+#footer_inner #footer_opensea {
+  width: 37px;
+  height: 30px;
+  background: url(images/icon_opensea.png) no-repeat center center;
+  background-size: contain;
+  padding: 0 15px;
+}
+
+footer #footer_inner p,a {
+  font-size: 19px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+footer #footer_inner a {
+  display: inline-block;
+  width: 100%;
+}
+
+.audio_button {
+  width:50px ;
+  height: 50px;
+  background-color: red;
+}
+
+
+
+#info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 35px;
+  background-color: #5394A4  ;
+  place-items: center;
+  text-align: center;
+}
+
+
+#info img {
+  max-width: 350px;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+
+
+/*----------------------------------------------------------*/
+/* タブレット用のCSS */
+/*----------------------------------------------------------*/
+@media only screen and (min-width:600px) and (max-width: 1024px) {
+}
+
+
+/*----------------------------------------------------------*/
+/* スマホ用のCSS */
+/*----------------------------------------------------------*/
+@media not all and (min-width: 600px) {
+
+  header {
+    height: 100px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
   }
 
-  var id = getUrlParam('id');
+  #header_inner nav {
+    display: none;
+  }
 
-  $(document).ready( function(){
-    const div = document.getElementById("chara_image");
-    div.innerHTML = '<img src="images/bear'+id+'.png" alt=""><br><p class="text"> # '+id+'</p>';
-  });
-</script>
-</body>
-</html>
+
+  #header_inner {
+    width: 100%;
+  }
+
+  #header_inner a {
+    margin: 0 auto;
+    /* width: 50%; */
+  }
+
+  #nav_sp {
+    display:block;
+  }
+
+  #nav_sp ul {
+    display:flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  #nav_sp ul li {
+    width: 50%;
+  }
+
+  #about img {
+    margin-bottom: 30px;
+  }
+
+  .subject {
+    font-size: 32px;
+    color: #FEFFC8;
+  }
+
+  .text {
+      font-size: 24px;
+      color: white;
+  }
+
+  .menu {
+    color: white;
+    font-size: 20px;
+
+  }
+}
