@@ -77,6 +77,11 @@ a {
   font-family: "Futura", Helvetica, sans-serif;
 }
 
+.chara_info_text {
+  font-size: 18px;
+  font-family: "Futura", Helvetica, sans-serif;
+}
+
 /*----------------------------
 scroll_up ｜下から上へ出現
 ----------------------------*/
@@ -537,16 +542,23 @@ footer #footer_inner a {
 }
 
 #status dl {
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
 }
 
-#status dl dt {
-  /* width: 100px; */
-  padding: 40px 0;
+#status dt {
+  float: left ;
+  clear: left ;
+  margin-right: 0.5em ;
+  width: 120px ;
+  padding: 20px 0;
 }
+
+
 #status dl dd {
   /* width: 100px; */
+  padding: 20px 0;
+  float: left ;
+  margin-left: 1em ;
 
 }
 
