@@ -238,41 +238,34 @@ width: 40%;
 .icons_item {
   display: inline-block;
   width: auto;
-  height: 70px;
 }
 
 #icons .icons_item p {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   color: white;
 }
-#icons_discord {
-  width: 55px;
-  height: 40px;
-  background: url(images/icon_discord.png) no-repeat top center;
-  background-size : contain;
-  margin: 0 auto;
-}
+
 
 #icons_twitter {
-  width: 49px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: url(images/icon_twitter.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
 }
 
 #icons_instagram {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: url(images/icon_instagram.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
 }
 
 #icons_opensea {
-  width: 44px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: url(images/icon_opensea.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
