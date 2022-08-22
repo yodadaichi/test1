@@ -68,7 +68,7 @@ a {
 .text {
   font-family: "Futura", Helvetica, sans-serif;
     font-size: 24px;
-    color: #441633;
+    color: white;
 }
 
 .menu {
@@ -467,6 +467,21 @@ footer #footer_inner a {
 }
 
 
+
+#info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 35px;
+  background-color: #5394A4  ;
+  place-items: center;
+  text-align: center;
+}
+
+
+#info img {
+  max-width: 400px;
+  border-radius: 20px;
+}
 
 
 
