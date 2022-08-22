@@ -50,7 +50,10 @@
   <div id="chara_image">
   </div>
   <div id="chara_info">
-
+    <h2 class="subject">PARITY STATS</h2>
+    <div id="status">
+      aaaaa
+    </div>
   </div>
 </div>
 
@@ -96,6 +99,20 @@ function getUrlParam(param){
   $(document).ready( function(){
     const div = document.getElementById("chara_image");
     div.innerHTML = '<img src="images/bear'+id+'.png" alt=""><br><p class="text"> # '+id+'</p>';
+  });
+
+  $(window).scroll(function () {
+    var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+    var scrollAnimationFunc = function () {
+      for (var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = 100;
+        if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+          scrollAnimationElm[i].classList.add('on');
+        }
+      }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
   });
 </script>
 </body>
