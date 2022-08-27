@@ -179,6 +179,12 @@ width: 40%;
   height: 120px;
 }
 
+#infomation p {
+  text-align: center;
+  padding: 35px;
+  background-color: cadetblue;
+}
+
 #top {
   background-color: white;
   height: auto;
@@ -212,45 +218,48 @@ width: 40%;
 
 
 #icons {
-  height: 120px;
+  height: 160px;
   display: flex;
   justify-content: space-around;
   padding:0 60px;
   background-color: #553377;
   align-items: center;
+  padding: 0 500px;
+  margin: 0 auto;
 }
 
 .icons_item {
   display: inline-block;
   width: auto;
+
 }
 
 #icons .icons_item p {
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
   color: white;
 }
 
 
 #icons_twitter {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(images/icon_twitter.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
 }
 
 #icons_instagram {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(images/icon_instagram.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
 }
 
 #icons_opensea {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(images/icon_opensea.png) no-repeat top center;
   background-size: contain;
   margin: 0 auto;
