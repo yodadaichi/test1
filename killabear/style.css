@@ -377,7 +377,6 @@ box-shadow: 5px 5px 0 #153A47;
 #team_inner {
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 2fr;
-
   padding: 35px;
   place-items: center;
 }
@@ -624,6 +623,9 @@ footer #footer_inner a {
   }
 
   #about {
+    grid-template-columns: 1fr;
+  }
+  #team {
     grid-template-columns: 1fr;
   }
 }
