@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KILLABEARS</title>
+  <title>GoblinHero's</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -49,7 +49,7 @@
 <div id="info">
   <div id="chara_image">
   </div>
-  <div id="chara_info">
+  <div id="chara_info" class="chara_info_text">
     <h2 class="subject">PARITY STATS</h2>
     <div id="status">
       <dl>
@@ -112,7 +112,7 @@ function getUrlParam(param){
 
   $(document).ready( function(){
     const chara_image  = document.getElementById("chara_image");
-    chara_image.innerHTML = '<img src="images/bear'+id+'.png" alt=""><br><p class="text"> # '+id+'</p>';
+    chara_image.innerHTML = '<img src="images/goblin'+id+'.JPG" alt=""><br><p class="text"> # '+id+'</p>';
 
     const like_food = document.getElementById("like_food");
     like_food.innerHTML = '<p>' + chara_info[id][0] + '</p>';
