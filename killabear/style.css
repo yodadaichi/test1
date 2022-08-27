@@ -61,15 +61,17 @@ a {
 
 .subject {
   font-family: "Futura", Helvetica, sans-serif;
-  font-size: 36px;
+  font-size: 42px;
   color: #FEFFC8;
 }
 
 .text {
   font-family: "Futura", Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     color: white;
-    overflow-wrap: break-word;
+    word-break:break-all;
+    width:100%;		/* 追加 */
+    max-width:100%;		/* 追加 */
 }
 
 .menu {
@@ -177,44 +179,21 @@ width: 40%;
   height: 120px;
 }
 
-#slide {
+#top {
+  background-color: white;
   height: auto;
-  width: auto;
-  margin: 0 auto;
-  padding: 30px;
+  margin-bottom: -6px;
 }
 
-.slide-items {
-  margin:  0 auto;
-  max-width: 800px;
-}
-
-
-#slide .slide-items img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-
-
-.slick-prev:before,
-.slick-next:before {
-  color: white;
-}
-.slick-dots li button:before {
-  font-size: 18px;
-  top: 6px;
-  color: white;
+#top img {
+  width: 100%;
 }
 
 
 /******* about *******/
 #about {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(300px, 1fr) 2fr;
   padding: 35px;
   background-color: #D39090  ;
   place-items: center;
@@ -222,14 +201,13 @@ width: 40%;
 
 #about img {
   max-width: 300px;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 #about #about_text {
   margin: 0 auto;
   padding: 0 10px;
   text-align: left;
-  /* max-width: 500px; */
 }
 
 
@@ -381,45 +359,42 @@ box-shadow: 5px 5px 0 #153A47;
 }
 
 
-
-
 #team {
   background-color: #5394A4;
   padding: 25px 0;
 }
 
 
-#team #team_inner h2 {
-  display: inline-block;
+#team_inner {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 2fr;
+
+  padding: 35px;
+  place-items: center;
+}
+
+#team img {
+  max-width: 300px;
+  border-radius: 40px;
+}
+
+#team #team_text {
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+}
+
+#team h2 {
+  display: block;
   width: 100%;
   height: 72px;
   text-align: center;
   line-height: 72px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-#team #team_inner {
-  text-align: center;
-}
 
-#team_container {
-  display: grid;
-  grid-template-rows:  245px 245px 245px 245px;
-  grid-template-columns:245px 245px;
-}
-
-.team_image {
-display: inline-block;
-width: 245px;
-height: 245px;
-background-color: red;
-margin: 10px 10px;
-border-radius: 20px;
-box-shadow: 5px 5px 0 #153A47;
-border: 3px solid white;
-object-fit: contain;
-}
 
 
 #faq {
@@ -452,6 +427,7 @@ object-fit: contain;
 
 #faq #faq_inner p {
   color: #EEEBDE;
+  margin-bottom: 50px;
 }
 
 #footer_inner {
@@ -495,7 +471,7 @@ object-fit: contain;
 }
 
 footer #footer_inner p,a {
-  font-size: 19px;
+  font-size: 26px;
   color: white;
   display: inline-block;
   text-align: center;
