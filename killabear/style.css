@@ -237,7 +237,6 @@ width: 40%;
 
 #icons .icons_item p {
   text-align: center;
-  font-size: 26px;
   color: white;
 }
 
@@ -266,13 +265,6 @@ width: 40%;
   margin: 0 auto;
 }
 
-
-#icons_inner p {
-  padding-top: 25px;
-  text-align: center;
-  font-size: 22px;
-  color: white;
-}
 
 
 #gallery{
@@ -477,7 +469,6 @@ box-shadow: 5px 5px 0 #153A47;
 }
 
 footer #footer_inner p,a {
-  font-size: 26px;
   color: white;
   display: inline-block;
   text-align: center;
