@@ -69,6 +69,7 @@ a {
   font-family: "Futura", Helvetica, sans-serif;
     font-size: 24px;
     color: white;
+    overflow-wrap: break-word;
 }
 
 .menu {
@@ -116,7 +117,7 @@ header {
 }
 
 #header_inner {
-  width: 80%;
+  width: 60%;
   height: 80px;
   vertical-align:bottom;
   display: flex;
@@ -212,7 +213,8 @@ width: 40%;
 /******* about *******/
 #about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: 1fr 2fr;
   padding: 35px;
   background-color: #D39090  ;
   place-items: center;
@@ -227,7 +229,7 @@ width: 40%;
   margin: 0 auto;
   padding: 0 10px;
   text-align: left;
-  max-width: 400px;
+  /* max-width: 500px; */
 }
 
 
@@ -634,5 +636,9 @@ footer #footer_inner a {
     color: white;
     font-size: 20px;
 
+  }
+
+  #about {
+    grid-template-columns: 1fr;
   }
 }
