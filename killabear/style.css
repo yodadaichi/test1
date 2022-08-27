@@ -620,14 +620,14 @@ footer #footer_inner a {
 
   .menu {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 
   }
 
   #about {
     grid-template-columns: 1fr;
   }
-  #team {
+  #team_inner {
     grid-template-columns: 1fr;
   }
 }
