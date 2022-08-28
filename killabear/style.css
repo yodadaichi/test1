@@ -637,7 +637,8 @@ footer #footer_inner a {
   }
 
   #gallery #gallery_inner #btn_go {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
   }
 
 
