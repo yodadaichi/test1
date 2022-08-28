@@ -48,7 +48,7 @@
 </div>
 
 <div id="top">
-  <img class="top1" src="images/top.png" alt="">
+  <img class="top1" src="images/top_gif.Gif" alt="">
 </div>
 
 <div id="about">
@@ -57,10 +57,12 @@
     <h2 class="subject scroll_up">About the Project</h2>
     <p class="text scroll_up">
 
-A secondary version of "goblintow.wtf", which revolutionized the world of NFT in May 2022 and still enjoys immense popularity today! A project in which goblins, reborn in both face and heart due to certain circumstances, become "HEROs" and confront the world's problems! This time, the goblin sets out on a journey to help Ukraine, which is suffering from war.
-Of the proceeds from the 10,000 pieces of NFT art on display, 20% will be donated to a designated Ukrainian government wallet.
-(0x165CD37b4C644C2921454429E7F9358d18A45e14) in cryptocurrency (ETH).
-In addition, 5% of the royalties generated on the Second Market will be automatically transferred to a Ukrainian government-designated wallet via "Opensea" technology. We believe that the love of GoblinHero's will eventually bring Love &Peace to the world.
+A secondary version of "goblintow.wtf", which revolutionized the world of NFT in May 2022 and still enjoys immense popularity today! A project in which goblins, reborn in both face and heart due to certain circumstances, become "HEROs" and confront the world's problems! <br>
+This time, the goblin sets out on a journey to help Ukraine, which is suffering from war. <br>
+Of the proceeds from the 10,000 pieces of NFT art on display, 20% will be donated to a designated Ukrainian government wallet. <br>
+(0x165CD37b4C644C2921454429E7F9358d18A45e14) in cryptocurrency (ETH). <br>
+In addition, 5% of the royalties generated on the Second Market will be automatically transferred to a Ukrainian government-designated wallet via "Opensea" technology. <br>
+We believe that the love of GoblinHero's will eventually bring Love &Peace to the world. <br>
 We need everyone's help! Come on, join the "GoblinHero's" and let's go on this journey together!
     </p>
   </div>
@@ -69,19 +71,28 @@ We need everyone's help! Come on, join the "GoblinHero's" and let's go on this j
 
 
 <div id="icons">
+  <div class="icons_item scroll_up"> </div>
   <div class="icons_item scroll_up">
-    <div id="icons_twitter"></div>
-    <p class="text">Twitter</p>
+    <a href="">
+      <div id="icons_twitter"></div>
+      <p class="text">Twitter</p>
+    </a>
   </div>
-  <div class="icons_item scroll_up">
-    <div id="icons_instagram"></div>
-    <p class="text">Instagram</p>
+  <a href="">
+    <div class="icons_item scroll_up">
+      <div id="icons_instagram"></div>
+      <p class="text">Instagram</p>
+    </div>
+  </a>
+
+  <a href="">
+    <div class="icons_item scroll_up">
+      <div id="icons_opensea"></div>
+      <p class="text">OpenSea</p>
+    </div>
+  </a>
+  <div class="icons_item scroll_up"> </div>
   </div>
-  <div class="icons_item scroll_up">
-    <div id="icons_opensea"></div>
-    <p class="text">OpenSea</p>
-  </div>
-</div>
 
 <div id="gallery">
   <div id="gallery_inner">
@@ -129,7 +140,8 @@ We need everyone's help! Come on, join the "GoblinHero's" and let's go on this j
     <p class="text scroll_up">
       We are a group of professionals who love "love and peace".<br>
       Our team name is "Project X". <br>
-      We do not disclose our country, gender, race or religion. It is part of our art. <br>We welcome anyone who shares our project!
+      We do not disclose our country, gender, race or religion. It is part of our art. <br>
+      We welcome anyone who shares our project!
     </p>
   </div>
   </div>
@@ -183,13 +195,19 @@ We need everyone's help! Come on, join the "GoblinHero's" and let's go on this j
   <div id="footer_inner">
     <div id="footer_icons">
       <div class="icons_item">
-        <div id="footer_twitter"></div>
+        <a href="#">
+          <div id="footer_twitter"></div>
+        </a>
       </div>
       <div class="icons_item">
-        <div id="footer_instagram"></div>
+        <a href="#">
+          <div id="footer_instagram"></div>
+        </a>
       </div>
       <div class="icons_item">
-        <div id="footer_opensea"></div>
+        <a href="#">
+          <div id="footer_opensea"></div>
+        </a>
       </div>
     </div>
     <p class="text">
@@ -207,15 +225,6 @@ We need everyone's help! Come on, join the "GoblinHero's" and let's go on this j
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
-  $(".slide-items").slick({
-    autoplay: true, // 自動再生
-    fade: true, // スライドをフェードイン・フェードアウト
-    cssEase: 'linear',// アニメーション
-    speed: 600, // フェードアニメーションの速度設定
-    autoplaySpeed: 3000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
-    infinite: true, // 無限スライド
-    dots: true, // インジケーター
-});
 
 $(function() {
 	$.fn.extend({
@@ -235,12 +244,6 @@ $(function() {
 	});
 });
 
-$(function() {
-  $('.Toggle').click(function() {
-     $(this).toggleClass('active');
-    $('.menu').toggleClass('open');
-   });
-  });
 
   $(function(){
     $('a[href^="#"]').click(function(){
