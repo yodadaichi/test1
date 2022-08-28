@@ -488,7 +488,7 @@ footer #footer_inner a {
 
 #info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 35px;
   background-color: #5394A4  ;
   place-items: center;
@@ -500,7 +500,7 @@ footer #footer_inner a {
 }
 
 #info img {
-  max-width: 300px;
+  max-width: 500px;
   border-radius: 40px;
   /* padding: 20px; */
   box-shadow: 5px 5px 0 #153A47;
@@ -635,4 +635,18 @@ footer #footer_inner a {
   #icons {
     grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
   }
+
+  #info {
+    grid-template-columns: 1fr;
+
+  }
+
+  #info img {
+    max-width: 300px;
+
+  }
+
+
+  #info #chara_info #status {
+    width: 300px;
 }
