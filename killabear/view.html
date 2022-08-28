@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KILLABEARS</title>
+  <title>GoblinHero's</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -12,246 +12,108 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.jpg">
-
 </head>
 <body>
 
 <header>
   <div id="header_inner">
     <a href="index.html"><img src="images/logo.jpg" alt=""></a>
-    <nav class="pc">
+    <nav class="cp">
       <ul class="header_menu">
-        <li class="menu"><a href="#about">ABOUT</a></li>
-        <li class="menu"> <a href="#team">TEAM</a></li>
-        <li class="menu"><a href="#faq">FAQ</a></li>
+        <li class="menu"><a href="index.html#about">ABOUT</a></li>
+        <li class="menu"> <a href="index.html#team">TEAM</a></li>
+        <li class="menu"><a href="index.html#faq">FAQ</a></li>
       </ul>
     </nav>
   </div>
   <div id="nav_sp">
     <nav id="nav_sp_container">
       <ul class="header_menu">
-        <li class="menu"><a href="#about">ABOUT</a></li>
-        <li class="menu"> <a href="#team">TEAM</a></li>
-        <li class="menu"><a href="#faq">FAQ</a></li>
+        <li class="menu"><a href="index.html#about">ABOUT</a></li>
+        <li class="menu"> <a href="index.html#team">TEAM</a></li>
+        <li class="menu"><a href="index.html#faq">FAQ</a></li>
       </ul>
     </nav>
-  </div>
+    </div>
 </header>
 
 
 
 <div id="space"></div>
 
-<div id="infomation">
-  <p class="text">
-    リビール予定<br>◯月◯日(ワシントン時間◯◯時)
-  </p>
-</div>
-
-<div id="top">
-  <img class="top1" src="images/top_gif.gif" alt="">
-</div>
-
-<div id="about">
-  <img class="scroll_up" src="images/about_logo.JPG" alt="">
-  <div id="about_text">
-    <h2 class="subject scroll_up">About the Project</h2>
-    <p class="text scroll_up">
-      A secondary version of "goblintow.wtf", which revolutionized the world of NFT in May 2022 and still enjoys immense popularity today! A project in which goblins, reborn in both face and heart due to certain circumstances, become "HEROs" and confront the world's problems! <br>
-      This time, the goblin sets out on a journey to help Ukraine, which is suffering from war. <br>
-      Of the proceeds from the 10,000 pieces of NFT art on display, 20% will be donated to a designated Ukrainian government wallet. <br>
-      <span style="font-size: 10px;">(0x165CD37b4C644C2921454429E7F9358d18A45e14)</span> in cryptocurrency (ETH). <br>
-      In addition, 5% of the royalties generated on the Second Market will be automatically transferred to a Ukrainian government-designated wallet via "Opensea" technology. <br>
-      We believe that the love of GoblinHero's will eventually bring Love &Peace to the world. <br>
-      We need everyone's help! Come on, join the "GoblinHero's" and let's go on this journey together!
-
-    </p>
+<div id="info">
+  <div id="chara_image">
   </div>
-</div>
-
-
-
-<div id="icons">
-  <div class="icons_item scroll_up"> </div>
-  <div class="icons_item scroll_up">
-    <a href="">
-      <div id="icons_twitter"></div>
-      <p class="text">Twitter</p>
-    </a>
-  </div>
-  <a href="">
-    <div class="icons_item scroll_up">
-      <div id="icons_instagram"></div>
-      <p class="text">Instagram</p>
-    </div>
-  </a>
-
-  <a href="">
-    <div class="icons_item scroll_up">
-      <div id="icons_opensea"></div>
-      <p class="text">OpenSea</p>
-    </div>
-  </a>
-  <div class="icons_item scroll_up"> </div>
-  </div>
-
-<div id="gallery">
-  <div id="gallery_inner">
-    <h2 class="subject scroll_up">Gallery</h2>
-    <form class="subject scroll_up" action="/view.html">
-      <input tyle="submit" name="id" placeholder="  Enter Bear #" type="text">
-      <input id="btn_go" type="submit" value="GO">
-    </form>
-    <div class="gallery_container">
-      <div class="galeery_box">
-        <ul randomPh="4">
-            <li class="gleery_image scroll_up">
-              <a href="view.html?id=1"><img src="images/goblin1.JPG" />
-              <p class="text"># 1</p>
-              </a>
-            </li>
-            <li class="gleery_image scroll_up">
-              <a href="view.html?id=2"><img src="images/goblin2.JPG" />
-              <p class="text"># 2</p>
-              </a>
-            </li>
-            <li class="gleery_image scroll_up">
-              <a href="view.html?id=3"><img src="images/goblin3.JPG" />
-              <p class="text"># 3</p>
-              </a>
-            </li>
-
-            <li class="gleery_image scroll_up">
-              <a href="view.html?id=3"><img src="images/goblin4.JPG" />
-              <p class="text"># 4</p>
-              </a>
-            </li>
-        </ul>
-      </div>
+  <div id="chara_info" class="chara_info_text">
+    <h2 class="subject">PARITY STATS</h2>
+    <div id="status">
+      <dl>
+        <dt>好きな食べ物</dt><dd id="like_food"></dd>
+        <dt>嫌いな食べ物</dt><dd id="dislike_food"></dd>
+      </dl>
     </div>
   </div>
 </div>
-
-
-<div id="team">
-  <h2 class="subject scroll_up">Team</h2>
-  <div id="team_inner">
-  <img class="scroll_up" src="images/team1.JPG" alt="">
-  <div id="team_text">
-    <p class="text scroll_up">
-
-      We are a group of professionals who love "love and peace".<br>
-      Our team name is "Project X". <br>
-      We do not disclose our country, gender, race or religion. It is part of our art. <br>
-      We welcome anyone who shares our project!
-    </p>
-  </div>
-  </div>
-</div>
-
-<div id="faq">
-  <div id="faq_inner">
-    <h2 class="subject scroll_up">Frequently Asked Questions</h2>
-    <div class="team_container">
-      <h3 class="subject scroll_up">
-        Are there any advantages to owning "Goblin Heroes"?
-      </h3>
-      <p class="text scroll_up">
-        You will have a better chance of getting priority for the next art release.
-        <br>
-        Owning "Goblin Heroes" is also a social contribution.
-        Using "blockchain" technology to help countries and communities in need around the world.
-      </p>
-      <h3 class="subject scroll_up">
-        Are you really donating?
-      </h3>
-      <p class="text scroll_up">
-        Donations are made using blockchain technology.
-      This ensures transparency.
-      The remittance is sent to the "Ukrainian" government designated ETH wallet (0x165CD37b4C644C2921454429E7F9358d18A45e14).
-      <br>
-      The information on the remittance address refers to the website published by the Ukrainian government. (https://donate.thedigital.gov.ua/
-      <br>
-      In order to increase transparency, we will also disseminate information via Twitter and our website.
-      </p>
-
-      <h3 class="subject scroll_up">
-        Why is there no discord in the community?
-      </h3>
-      <p class="text scroll_up">
-        Because there are so many fraudulent and discriminatory statements throughout "Discord."
-      </p>
-      <h3 class="subject scroll_up">
-        Do you have a roadmap for the project?
-      </h3>
-      <p class="text scroll_up">
-        We want to commit to the issues we are facing around the world.
-        For our next project, we are considering a work that supports "LGBTQ" people. Look forward to the day when it is made public.
-      </p>
-    </div>
-  </div>
-</div>
-
 
 <footer>
   <div id="footer_inner">
     <div id="footer_icons">
       <div class="icons_item">
-        <a href="#">
-          <div id="footer_twitter"></div>
-        </a>
+        <div id="footer_twitter"></div>
       </div>
       <div class="icons_item">
-        <a href="#">
-          <div id="footer_instagram"></div>
-        </a>
+        <div id="footer_instagram"></div>
       </div>
       <div class="icons_item">
-        <a href="#">
-          <div id="footer_opensea"></div>
-        </a>
+        <div id="footer_opensea"></div>
       </div>
     </div>
-    <p class="text">
+    <p>
       Contract Address
     </p>
     <a href="">aaaaaaa</a>
   </div>
 </footer>
 
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
 
-$(function() {
-	$.fn.extend({
-		randomPh : function(num) {
-			return this.each(function() {
-				var chn = $(this).children().hide().length;
-				for(var i = 0; i < num && i < chn; i++) {
-					var r = parseInt(Math.random() * (chn - i)) + i;
-				$(this).children().eq(r).show().prependTo($(this));
-				}
-			});
-		}
-	});
+function getUrlParam(param){
+    var pageUrl = window.location.search.substring(1);
+    var urlVar = pageUrl.split('&');
+    for (var i = 0; i < urlVar.length; i++){
+        var paramName = urlVar[i].split('=');
+        if (paramName[0] == param) {
+            return decodeURI(paramName[1]);
+        }
+    }
+  }
 
-	$("[randomPh]").each(function() {
-		$(this).randomPh($(this).attr("randomPh"));
-	});
-});
+  const chara_info = [
+    ["", ""],
+    ["カレー", "納豆"],
+    ["アイス", "トマト"],
+    ["牛丼", "オクラ"],
+    ["焼き肉", "牛乳"],
+    ["寿司", "アスパラ"],
+    ["スタバ", "しいたけ"],
+    ["刺し身", "ホルモン"],
+  ];
 
+  var id = getUrlParam('id');
 
-  $(function(){
-    $('a[href^="#"]').click(function(){
-      var adjust = -120;
-      var speed = 60;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top + adjust;
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-    });
+  $(document).ready( function(){
+    const chara_image  = document.getElementById("chara_image");
+    chara_image.innerHTML = '<img src="images/goblin'+id+'.JPG" alt=""><br><p class="text"> # '+id+'</p>';
+
+    const like_food = document.getElementById("like_food");
+    like_food.innerHTML = '<p>' + chara_info[id][0] + '</p>';
+
+    const dislike_food = document.getElementById("dislike_food");
+    dislike_food.innerHTML = '<p>' + chara_info[id][1] + '</p>';
   });
 
   $(window).scroll(function () {
@@ -267,6 +129,7 @@ $(function() {
     window.addEventListener('load', scrollAnimationFunc);
     window.addEventListener('scroll', scrollAnimationFunc);
   });
+
 
 </script>
 </body>
