@@ -205,7 +205,7 @@ width: 40%;
   background-color: #D39090  ;
   place-items: center;
   gap: 10px;
-  overflow: hidden;
+  word-break: break-word;
 }
 
 #about img {
