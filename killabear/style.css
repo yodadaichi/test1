@@ -488,7 +488,7 @@ footer #footer_inner a {
 
 #info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 35px;
   background-color: #5394A4  ;
   place-items: center;
@@ -500,7 +500,7 @@ footer #footer_inner a {
 }
 
 #info img {
-  max-width: 500px;
+  max-width: 300px;
   border-radius: 40px;
   /* padding: 20px; */
   box-shadow: 5px 5px 0 #153A47;
@@ -516,7 +516,7 @@ footer #footer_inner a {
 
 #info #chara_info #status {
   max-width: 500px;
-  height: 500px;
+  height: 300px;
   background-color: #EEEBDE;
   border-radius: 10px;
   margin: 0 auto;
@@ -630,5 +630,9 @@ footer #footer_inner a {
   }
   #team_inner {
     grid-template-columns: 1fr;
+  }
+
+  #icons {
+    grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
   }
 }
