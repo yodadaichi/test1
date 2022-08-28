@@ -636,6 +636,11 @@ footer #footer_inner a {
     grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
   }
 
+  #gallery #gallery_inner #btn_go {
+    font-size: 18px;
+  }
+
+
   #info {
     grid-template-columns: 1fr;
 
