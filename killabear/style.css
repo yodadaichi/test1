@@ -61,7 +61,7 @@ a {
 
 .subject {
   font-family: "Futura", Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   color: #FEFFC8;
 }
 
@@ -70,8 +70,7 @@ a {
     font-size: 18px;
     color: white;
     word-break:break-all;
-    width:100%;		/* 追加 */
-    max-width:100%;		/* 追加 */
+
 }
 
 .menu {
@@ -201,9 +200,11 @@ width: 40%;
 #about {
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 2fr;
+  /* grid-template-columns: repeat(3, minimax(300px, 1fr) 2fr); */
   padding: 35px;
   background-color: #D39090  ;
   place-items: center;
+  gap: 10px;
 }
 
 #about img {
@@ -220,24 +221,22 @@ width: 40%;
 
 #icons {
   height: 160px;
-  display: flex;
-  justify-content: space-around;
-  padding:0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap:20px;
   background-color: #553377;
   align-items: center;
-  /* padding: 0 30; */
-  margin: 0 auto;
 }
 
 .icons_item {
   display: inline-block;
   width: auto;
-
 }
 
 #icons .icons_item p {
   text-align: center;
   color: white;
+  font-size: 16px;
 }
 
 
@@ -481,6 +480,10 @@ footer #footer_inner a {
 
 }
 
+#footer_inner #footer_icons {
+  margin-bottom: 10px;
+}
+
 
 
 #info {
@@ -597,6 +600,13 @@ footer #footer_inner a {
 
   #about img {
     margin-bottom: 30px;
+    width: 200px;
+  }
+
+
+  #team img {
+    margin-bottom: 30px;
+    width: 200px;
   }
 
   .subject {
