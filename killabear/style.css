@@ -523,7 +523,7 @@ footer #footer_inner a {
 
 #info #chara_info #status {
   max-width: 500px;
-  height: 300px;
+  height: auto;
   background-color: #EEEBDE;
   border-radius: 10px;
   margin: 0 auto;
@@ -531,24 +531,27 @@ footer #footer_inner a {
 }
 
 #status dl {
-  padding: 20px;
+  padding: 10px;
+  display: grid;
+  /* width: 90%; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+
+}
+
+.info_box {
+  margin: 16px;
 }
 
 #status dt {
-  float: left ;
-  clear: left ;
-  margin-right: 0.5em ;
-  width: 120px ;
-  padding: 20px 0;
+  font-size: 32px;
+  padding: 5px;
 }
 
 
 #status dl dd {
-  /* width: 100px; */
-  padding: 20px 0;
-  float: left ;
-  margin-left: 1em ;
-
+  font-size: 24px;
+  padding: 5px;
 }
 
 
