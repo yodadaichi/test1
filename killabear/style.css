@@ -57,17 +57,24 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+	font-family: 'MyFont';
+	src: url(HARRYP__.TTF);
+}
 
+body {
+	font-family: MyFont;
+}
 
 .subject {
-  font-family: "Futura", Helvetica, sans-serif;
-  font-size: 32px;
+  /* font-family: "Futura", Helvetica, sans-serif; */
+  font-size: 40px;
   color: #FEFFC8;
 }
 
 .text {
-  font-family: "Futura", Helvetica, sans-serif;
-    font-size: 18px;
+  /* font-family: "Futura", Helvetica, sans-serif; */
+    font-size: 22px;
     color: white;
     word-break:break-all;
 
@@ -75,13 +82,13 @@ a {
 
 .menu {
   color: white;
-  font-size: 16px;
-  font-family: "Futura", Helvetica, sans-serif;
+  font-size: 20px;
+  /* font-family: "Futura", Helvetica, sans-serif; */
 }
 
 .chara_info_text {
-  font-size: 18px;
-  font-family: "Futura", Helvetica, sans-serif;
+  font-size: 24px;
+  /* font-family: "Futura", Helvetica, sans-serif; */
 }
 
 /*----------------------------
@@ -655,4 +662,5 @@ footer #footer_inner a {
 
   #info #chara_info #status {
     width: 300px;
+}
 }
