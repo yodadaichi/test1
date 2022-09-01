@@ -74,7 +74,7 @@ body {
 
 .text {
   /* font-family: "Futura", Helvetica, sans-serif; */
-    font-size: 22px;
+    font-size: 28px;
     color: white;
     word-break:break-all;
 
@@ -82,7 +82,7 @@ body {
 
 .menu {
   color: white;
-  font-size: 20px;
+  font-size: 28px;
   /* font-family: "Futura", Helvetica, sans-serif; */
 }
 
@@ -518,7 +518,7 @@ footer #footer_inner a {
   text-align: center;
   width: 100%;
   padding: 10px 0;
-
+  margin: 10px 0;
 }
 
 #info #chara_info #status {
@@ -526,7 +526,7 @@ footer #footer_inner a {
   height: auto;
   background-color: #EEEBDE;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 20px auto;
   box-shadow: 5px 5px 0 #153A47;
 }
 
