@@ -48,8 +48,10 @@
     <h2 class="subject">PARITY STATS</h2>
     <div id="status">
       <dl>
-        <dt>好きな食べ物</dt><dd id="like_food"></dd>
-        <dt>嫌いな食べ物</dt><dd id="dislike_food"></dd>
+        <dt>"Character"</dt><dd id="Character"></dd>
+        <dt>"Pastime"</dt><dd id="Pastime"></dd>
+        <dt>"Special Ability"</dt><dd id="SpecialAbility"></dd>
+        <dt>"Entertainer"</dt><dd id="Entertainer"></dd>
       </dl>
     </div>
   </div>
@@ -93,14 +95,11 @@ function getUrlParam(param){
   }
 
   const chara_info = [
-    ["", ""],
-    ["カレー", "納豆"],
-    ["アイス", "トマト"],
-    ["牛丼", "オクラ"],
-    ["焼き肉", "牛乳"],
-    ["寿司", "アスパラ"],
-    ["スタバ", "しいたけ"],
-    ["刺し身", "ホルモン"],
+    ["Character", "Pastime", "Special Ability", "Entertainer"],
+    ["Brave", "Running", "I can run faster than Usain Bolt" ,"Lady Gaga"],
+    ["Enthusiastic", "Muscle training", "perpetual youth and longevity" ,"Maroon5"],
+    ["Tomboy", "Going to music festivals", "Perfect pitch" ,"U2"],
+    ["Shy", "Gluttony", "Unusually good sense of smell" ,"Justin Bieber"]
   ];
 
   var id = getUrlParam('id');
@@ -109,11 +108,17 @@ function getUrlParam(param){
     const chara_image  = document.getElementById("chara_image");
     chara_image.innerHTML = '<img src="images/goblin'+id+'.JPG" alt=""><br><p class="text"> # '+id+'</p>';
 
-    const like_food = document.getElementById("like_food");
-    like_food.innerHTML = '<p>' + chara_info[id][0] + '</p>';
+    const Character = document.getElementById("Character");
+    Character.innerHTML = '<p>' + chara_info[id][0] + '</p>';
 
-    const dislike_food = document.getElementById("dislike_food");
-    dislike_food.innerHTML = '<p>' + chara_info[id][1] + '</p>';
+    const Pastime = document.getElementById("Pastime");
+    Pastime.innerHTML = '<p>' + chara_info[id][1] + '</p>';
+
+    const SpecialAbility = document.getElementById("SpecialAbility");
+    SpecialAbility.innerHTML = '<p>' + chara_info[id][2] + '</p>';
+
+    const Entertainer = document.getElementById("Entertainer");
+    Entertainer.innerHTML = '<p>' + chara_info[id][3] + '</p>';
   });
 
   $(window).scroll(function () {
