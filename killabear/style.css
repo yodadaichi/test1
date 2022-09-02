@@ -212,7 +212,7 @@ width: 80%;
   /* display: grid;
   grid-template-columns: minmax(300px, 1fr) 2fr; */
   display: flex;
-  padding: 60px;
+  padding: 30px;
   background-color: #48A466;
   place-items: center;
   /* gap: 10px; */
