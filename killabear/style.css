@@ -141,7 +141,7 @@ header {
 #header_inner a  {
 display: inline-block;
 /* width: 30%; */
-
+width: 80%;
 }
 
 #header_inner img {
@@ -149,7 +149,6 @@ display: inline-block;
   width: auto;
   height: 90%;
   display: inline-block;
-
 }
 
 #header_inner nav {
