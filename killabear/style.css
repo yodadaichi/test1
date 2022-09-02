@@ -132,7 +132,7 @@ header {
 }
 
 #header_inner {
-  width: 60%;
+  width: 1200px;
   height: 80px;
   vertical-align:bottom;
   display: flex;
@@ -140,13 +140,16 @@ header {
 
 #header_inner a  {
 display: inline-block;
-width: 40%;
+/* width: 30%; */
+
 }
 
-#header_inner a img {
+#header_inner img {
   margin: 0 auto;
   width: auto;
   height: 90%;
+  display: inline-block;
+
 }
 
 #header_inner nav {
@@ -158,9 +161,9 @@ width: 40%;
   display: flex;
   justify-content:space-around;
   height: 100%;
-  width: 100%;
+  width: 80%;
   line-height: 120px;
-  margin: 0 40px;
+  margin: 0 auto;
 }
 
 #header_inner nav ul li {
@@ -169,6 +172,7 @@ width: 40%;
   height: 100%;
   text-align: center;
   line-height: 80px;
+  margin: 0 30px;
 }
 #header_inner nav ul li a {
   height: 60%;
@@ -176,12 +180,6 @@ width: 40%;
 }
 
 
-#header_inner nav ul li img {
-  width: auto;
-  height: 80%;
-  vertical-align: middle;
-
-}
 
 #nav_sp {
   display: none;
