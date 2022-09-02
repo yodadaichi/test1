@@ -494,7 +494,6 @@ footer #footer_inner a {
 #info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  padding: 35px;
   background-color: #5394A4  ;
   place-items: center;
   text-align: center;
@@ -550,6 +549,7 @@ footer #footer_inner a {
 #status dl dd {
   font-size: 24px;
   padding: 5px;
+  color: black;
 }
 
 
