@@ -66,29 +66,40 @@ body {
 	font-family: MyFont;
 }
 
-.subject {
-  /* font-family: "Futura", Helvetica, sans-serif; */
-  font-size: 40px;
-  color: #FEFFC8;
-}
 
-.text {
-  /* font-family: "Futura", Helvetica, sans-serif; */
-    font-size: 28px;
+p {
+    font-size: 36px;
     color: white;
     word-break:break-all;
+}
 
+a {
+  color: white;
+  display: block;
+  /* height: 100%;
+  width: 100% */
+}
+
+h2 {
+  font-size: 46px;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+  color: white;
+  padding: 16px 0;
 }
 
 .menu {
   color: white;
   font-size: 28px;
-  /* font-family: "Futura", Helvetica, sans-serif; */
 }
 
 .chara_info_text {
   font-size: 24px;
-  /* font-family: "Futura", Helvetica, sans-serif; */
 }
 
 /*----------------------------
@@ -104,17 +115,13 @@ scroll_up ｜下から上へ出現
   opacity: 1.0;
 }
 
-.timing02 {transition-delay: .2s;}
-.timing03 {transition-delay: .4s;}
-.timing04 {transition-delay: .6s;}
-.timing05 {transition-delay: .8s;}
-.timing06 {transition-delay: 1s;}
+
 
 
 /******** ヘッダー *******/
 
 header {
-  background-color: #252B2D;
+  background-color: black;
   height: 120px;
   width: 100%;
   display: flex;
@@ -208,7 +215,7 @@ width: 40%;
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 2fr;
   padding: 35px;
-  background-color: #D39090  ;
+  background-color: #48A466;
   place-items: center;
   gap: 10px;
   min-width: 0;
@@ -232,7 +239,7 @@ width: 40%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap:20px;
-  background-color: #553377;
+  background-color: #DBB680;
   align-items: center;
 }
 
@@ -243,8 +250,6 @@ width: 40%;
 
 #icons .icons_item p {
   text-align: center;
-  color: white;
-  font-size: 16px;
 }
 
 
@@ -275,7 +280,7 @@ width: 40%;
 
 
 #gallery{
-  background-color: #29697A;
+  background-color: #48A466;
   padding: 25px 0;
 }
 
@@ -286,7 +291,6 @@ width: 40%;
   height: 72px;
   text-align: center;
   line-height: 72px;
-  color: white;
   margin-bottom: 30px;
 }
 
@@ -316,7 +320,7 @@ width: 40%;
   color: white;
   font-size: 20px;
   padding: 4px 10px;
-  background-color: #4F94CF;
+  background-color: #48A466;
   border: 3px solid #A5D6FF;
   border-radius: 10px;
   transition: 0.3s;
@@ -348,9 +352,6 @@ width: 40%;
   border-radius: 10px;
 }
 
-.galeery_box ul li p {
-  color :white;
-}
 
 .gleery_image {
 display: inline-block;
@@ -367,7 +368,7 @@ box-shadow: 5px 5px 0 #153A47;
 
 
 #team {
-  background-color: #5394A4;
+  background-color: #5E5F5E;
   padding: 25px 0;
 }
 
@@ -378,6 +379,8 @@ box-shadow: 5px 5px 0 #153A47;
   padding: 35px;
   place-items: center;
   gap :20px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #team img {
@@ -397,14 +400,13 @@ box-shadow: 5px 5px 0 #153A47;
   height: 72px;
   text-align: center;
   line-height: 72px;
-  color: white;
 }
 
 
 
 
 #faq {
-  background-color: #29697A;
+  background-color: #425078;
 }
 
 #faq #faq_inner {
@@ -420,26 +422,23 @@ box-shadow: 5px 5px 0 #153A47;
   height: 72px;
   text-align: center;
   line-height: 72px;
-  color: white;
 }
 
 #faq #faq_inner h3 {
-  color: #FECE62;
+  color: black;
   width: auto;
   margin-top: 15px;
 }
 
 #faq #faq_inner p {
-  color: #EEEBDE;
   margin-bottom: 50px;
 }
 
 #footer_inner {
   height: 100px;
   padding: 40px;
-  background-color: #252B2D;
+  background-color: black;
   text-align: center;
-  color: white;
 }
 
 #footer_icon {
@@ -475,7 +474,6 @@ box-shadow: 5px 5px 0 #153A47;
 }
 
 footer #footer_inner p,a {
-  color: white;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -619,15 +617,25 @@ footer #footer_inner a {
     width: 200px;
   }
 
-  .subject {
-    font-size: 32px;
-    color: #FEFFC8;
-  }
+  p {
+    font-size: 24px;
+    color: white;
+    word-break:break-all;
+}
 
-  .text {
-      font-size: 26px;
-      color: white;
-  }
+h2 {
+  font-size: 32px;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  color: white;
+  padding: 16px 0;
+}
+
 
   .menu {
     color: white;
