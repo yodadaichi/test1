@@ -540,8 +540,8 @@ footer #footer_inner a {
   margin: 16px;
 }
 
-#status dt {
-  font-size: 32px;
+#status dt{
+  font-size: 36px;
   padding: 5px;
 }
 
@@ -549,9 +549,11 @@ footer #footer_inner a {
 #status dl dd {
   font-size: 24px;
   padding: 5px;
-  color: black;
 }
 
+#status dl dd p {
+  color: black;
+}
 
 
 
