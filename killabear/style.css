@@ -382,7 +382,7 @@ box-shadow: 5px 5px 0 #153A47;
   padding: 35px;
   place-items: center;
   gap :20px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -393,7 +393,7 @@ box-shadow: 5px 5px 0 #153A47;
 
 #team #team_text {
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   text-align: left;
 }
 
@@ -413,7 +413,8 @@ box-shadow: 5px 5px 0 #153A47;
 }
 
 #faq #faq_inner {
-  padding: 25px;
+  padding: 35px;
+  margin: 0 auto;
 }
 
 
