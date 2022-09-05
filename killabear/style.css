@@ -501,6 +501,7 @@ footer #footer_inner a {
   background-color: #5394A4  ;
   place-items: center;
   text-align: center;
+  padding: 35px;
 }
 
 #info #chara_image {
@@ -675,11 +676,11 @@ h3 {
 
   #info img {
     max-width: 300px;
-
+    padding-top: 30px;
   }
 
 
   #info #chara_info #status {
     width: 300px;
-} 
+}
 }
